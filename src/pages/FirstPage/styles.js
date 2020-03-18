@@ -1,10 +1,24 @@
 import styled from 'styled-components';
 
 
-import img from '../../assets/Tela-inicial-1.png';
-
-export const Container = styled.img`
-  background-image: url(${img});
-  width: 2000px;
-    height: 2000px;
+export const Container = styled.div`
+  width:100%;
+  height:100%;
 `;
+
+export const Background = styled.div`
+ 
+
+ 
+  background: url(${props => (props.banner)}) no-repeat;
+  background-size: 100% 100%;
+ 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: scale-down;
+  z-index: -3;
+`;
+
+
+

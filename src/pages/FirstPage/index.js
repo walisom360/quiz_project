@@ -1,9 +1,13 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container,Background } from './styles';
+
+import img from '../../assets/Tela-Inicial-1.1.png';
 
 export default function FirstPage() {
   return (
-    <Container />
+    <Container>
+      <Background banner={img}  />
+    </Container>
   );
 }
