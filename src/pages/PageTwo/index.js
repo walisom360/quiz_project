@@ -2,16 +2,20 @@ import React from 'react';
 
 import { Container,Background,ButtonNext } from './styles';
 
-import img from '../../assets/Tela-Inicial-2.png';
-
-//import img from '../../assets/Tela-Inicial-1.1.png';
+import img from '../../assets/Tela-Inicial-22.png';
 
 
-export default function PageTwo() {
+export default function FirstPage({history}) {
+
+ function next(){
+   history.push('/tasktree')
+ }
+
+
   return (
     <Container>
       <Background banner={img}  />
-      {/* <ButtonNext>Iniciar</ButtonNext> */}
+      <ButtonNext onClick={next}>Avançar</ButtonNext>
     </Container>
   );
 }

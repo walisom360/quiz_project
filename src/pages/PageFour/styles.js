@@ -54,7 +54,7 @@ export const ButtonNext = styled.button`
   font-weight: bold;
   border:1px solid #fff;
   position:absolute;
-  margin-top:390px;
+  margin-top:530px;
   outline: none;
   margin-left: 10px;
   margin-right: 32px;

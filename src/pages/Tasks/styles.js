@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding:180px;
+  padding:80px;
 
   h1{
     color:#1271CC;
@@ -20,7 +20,7 @@ export const DivOptions = styled.div`
 
 export const Card = styled.div`
   width:220px;
-  height:320px;
+  height:280px;
   border-radius:4px;
   border:1px solid #fff;
   margin-right:27px;
