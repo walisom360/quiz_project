@@ -17,8 +17,8 @@ export const Background = styled.div`
   background: url(${props => (props.banner)}) no-repeat;
   background-size: 100% 100%;
  
-  width: 1000px;
-  height: 700px;
+  width: 800px;
+  height: 600px;
  
   object-fit: scale-down;
   z-index: -3;
@@ -42,16 +42,16 @@ export const ButtonNext = styled.button`
     margin-right: 6px;
   }
   border: none;
-  height: 80px;
+  height: 60px;
   border-radius: 25px;
   cursor: pointer;
   color: white;
   background: #755684;
-  width: 270px;
-  font-size: 32px;
+  width: 220px;
+  font-size: 26px;
   font-weight: bold;
   position:absolute;
-  margin-top:550px;
+  margin-top:520px;
   outline: none;
   margin-left: 10px;
   margin-right: 32px;
