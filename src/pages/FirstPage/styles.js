@@ -46,10 +46,11 @@ export const ButtonNext = styled.button`
   border-radius: 25px;
   cursor: pointer;
   color: white;
-  background: #755684;
+  background: #0f2232;
   width: 220px;
   font-size: 26px;
   font-weight: bold;
+  border:1px solid #fff;
   position:absolute;
   margin-top:520px;
   outline: none;
