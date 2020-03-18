@@ -4,21 +4,19 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width:100%;
   height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-top:60px;
+  
+  
 `;
 
 export const Background = styled.div`
-  margin-top:320px;
+
 
  
   background: url(${props => (props.banner)}) no-repeat;
   background-size: 100% 100%;
  
-  width: 50%;
-  height:70%;
+  width: 100%;
+  height:100%;
  
   object-fit: scale-down;
   z-index: -3;

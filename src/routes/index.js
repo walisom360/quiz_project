@@ -7,6 +7,8 @@ import Tasks from '../pages/Tasks'
 import TasksNormal from '../pages/TasksNormal'
 import FirstPage from '../pages/FirstPage'
 
+import PageTwo from '../pages/PageTwo'
+
 
 
 export default function Routes(){
@@ -16,7 +18,8 @@ export default function Routes(){
      <Switch>
        <Route exact path="/"  component={FirstPage} />
        <Route  path="/tasks" component={Tasks} />
-       <Route  path="/tasksNormal" component={TasksNormal} />
+       <Route  path="/tasksNormal" component={TasksNormal} />  
+       <Route  path="/tasktwo" component={PageTwo} />
      </Switch>
     </BrowserRouter>
   )
