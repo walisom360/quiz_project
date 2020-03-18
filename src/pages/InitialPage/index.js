@@ -1,5 +1,7 @@
 import React,{useState, useEffect} from 'react'
 
+import { parseISO, isBefore } from 'date-fns';
+
 
 import users from '../../assets/users.png'
 
@@ -37,6 +39,13 @@ export default function InitialPate(  {history}){
     }
     return
   }
+
+  const date = '2018-04-01 18:00:00';
+  const parsedDate = parseISO(date);
+  
+  const past = isBefore(parsedDate, new Date())
+
+  console.log(parsedDate,past)
 
   
   return(
