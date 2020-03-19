@@ -3,9 +3,9 @@ import React,{useState, useEffect} from 'react'
 import { parseISO, isBefore } from 'date-fns';
 
 
-import users from '../../assets/users.png'
+import img from '../../assets/pone.png';
 
-import {Container,DivButton,ButtonNext} from './styles'
+import {Container,DivButton,ButtonNext,Background} from './styles'
 
 import {FaCheck} from 'react-icons/fa'
 
@@ -50,9 +50,14 @@ export default function InitialPate(  {history}){
   
   return(
    <Container>
+    
+
+     <Background banner={img}  />
+
+  <div style={{padding:80}}>
      <h1>Como você se definiria?</h1>
    
-     <textarea  value={name} onKeyDown={nextInput} onChange={e => setName(e.target.value)} placeholder="Se descreva melhor ...." />
+   <textarea style={{width:'700px'}}  value={name} onKeyDown={nextInput} onChange={e => setName(e.target.value)} placeholder="Se descreva melhor ...." />   
  
   {appearButton && <DivButton>
     <ButtonNext onClick={next}>
@@ -61,6 +66,8 @@ export default function InitialPate(  {history}){
     </ButtonNext>
     <p>Enviar</p>
    </DivButton>}
+
+   </div>
 
    </Container>
   )
