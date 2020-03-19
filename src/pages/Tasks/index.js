@@ -17,7 +17,7 @@ export default function Task({history}){
 
 
   function next(){
-    history.push('/descriptionone')
+    history.push('/confortable')
   }
  
 

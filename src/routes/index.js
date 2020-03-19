@@ -11,7 +11,15 @@ import PageTree from '../pages/PageTree'
 import PageFour from '../pages/PageFour'
 import QuestionDescription from '../pages/QuestionDescription'
 import YouDescription from '../pages/YouDescription'
+import Confortable from '../pages/Confortable'
+import Day from '../pages/Day'
 
+import Animals from '../pages/Animals'
+import Musical from '../pages/Musical'
+import Dream from '../pages/Dream'
+import Unusual from '../pages/Unusual'
+
+import Finish from '../pages/Finish'
 
 
 export default function Routes(){
@@ -26,8 +34,18 @@ export default function Routes(){
        <Route  path="/tasktree" component={PageTree} />
        <Route  path="/taskfour" component={PageFour} />
        <Route path="/descriptionone" component={QuestionDescription}/>
+       
 
        <Route path="/youdescription" component={YouDescription}/>
+       <Route path="/confortable" component={Confortable}/>
+       <Route path="/day" component={Day}/>
+
+       <Route path="/animals" component={Animals}/>
+       <Route path="/musical" component={Musical}/>
+       <Route path="/dream" component={Dream}/>
+       <Route path="/unusual" component={Unusual}/>
+
+       <Route path="/fim" component={Finish}/>
       
      </Switch>
     </BrowserRouter>
