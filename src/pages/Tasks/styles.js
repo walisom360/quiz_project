@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding:80px;
+
 
   h1{
-    color:#1271CC;
+    color:#fff;
   }
 `;
 
@@ -61,3 +61,20 @@ export const Option = styled.div`
 `
 
 
+export const Background = styled.div`
+  
+
+ 
+  background: url(${props => (props.banner)}) no-repeat;
+  background-size: 100% 100%;
+
+  filter: brightness(60%);
+ 
+  width: 100%;
+  height:100%;
+ 
+  object-fit: fill;
+  z-index: -3;
+
+  position:absolute;
+`;

@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction:column;
   justify-content:space-between;
   align-items:flex-start;
-  padding:100px;
+  
 
   img{
     width:130px;
@@ -15,20 +15,21 @@ export const Container = styled.div`
 
   h1{
     margin-bottom:20px;
-    color:#1271CC;
+    color:#fff;
   }
 
   textarea{
-    border-bottom:4px solid #fff;
-    width:60%;
+    border-bottom:4px solid #353940;
+    width:420px;
     height: 222px;
     font-size: 18px;
     border-radius:4px;
     padding:10px;
     color: #666;
-    background:#353940;
+    /* background:#353940; */
+    background:#fff;
     border: 0;
-    border: 1px solid #eee;
+    border: 2px solid  #353940;
     outline:0;
     margin-top:40px;
   }
@@ -77,3 +78,20 @@ export const DivButton = styled.div`
  transition-delay:0.2s;
 
 `
+export const Background = styled.div`
+  
+
+ 
+  background: url(${props => (props.banner)}) no-repeat;
+  background-size: 100% 100%;
+
+  filter: brightness(60%);
+ 
+  width: 100%;
+  height:100%;
+ 
+  object-fit: fill;
+  z-index: -3;
+
+  position:absolute;
+`;
