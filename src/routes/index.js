@@ -9,6 +9,7 @@ import FirstPage from '../pages/FirstPage'
 import PageTwo from '../pages/PageTwo'
 import PageTree from '../pages/PageTree'
 import PageFour from '../pages/PageFour'
+import QuestionDescription from '../pages/QuestionDescription'
 
 
 
@@ -18,11 +19,12 @@ export default function Routes(){
     <BrowserRouter>
      <Switch>
        <Route exact path="/"  component={FirstPage} />
-       <Route  path="/tasks" component={Tasks} />
-       <Route  path="/tasksNormal" component={TasksNormal} />  
+       <Route exact path="/tasks" component={Tasks} />
+       <Route path="/taskNormal" component={TasksNormal} />  
        <Route  path="/tasktwo" component={PageTwo} />
        <Route  path="/tasktree" component={PageTree} />
        <Route  path="/taskfour" component={PageFour} />
+       <Route path="/descriptionone" component={QuestionDescription}/>
       
      </Switch>
     </BrowserRouter>

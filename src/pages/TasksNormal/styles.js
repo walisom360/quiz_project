@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding:120px;
+  padding:80px;
 
   h1{
     color:#1271CC;

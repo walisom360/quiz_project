@@ -7,12 +7,15 @@ import {FaCheck} from 'react-icons/fa'
 
 import piui from '../../assets/piui.jpeg'
 
+
+
+
 export default function Task({history}){
   const marked = true
 
 
   function next(){
-    history.push('/tasksNormal')
+    history.push('/descriptionone')
   }
  
 
