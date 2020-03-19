@@ -50,8 +50,8 @@ export const Option = styled.div`
  display:flex;
  align-items:center;
  justify-content:center;
- width:30px;
- height:30px;
+ width:140px;
+ height:40px;
  border-radius:4px;
  margin-top:4px;
 

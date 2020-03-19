@@ -35,7 +35,7 @@ export default function InitialPate(  {history}){
 
   function nextInput(e){
     if (e.key === 'Enter' && name.length > 0) {
-      history.push('/taskNormal')
+      history.push('/tasks')
     }
     return
   }
@@ -55,9 +55,9 @@ export default function InitialPate(  {history}){
      <Background banner={img}  />
 
   <div style={{padding:80}}>
-     <h1>Como você se definiria?</h1>
+     <h1>Em sua rotina, que tipo de coisas te aborrecem? (De forma geral)</h1>
    
-   <textarea style={{width:'700px'}}  value={name} onKeyDown={nextInput} onChange={e => setName(e.target.value)} placeholder="Se descreva melhor ...." />   
+   <textarea style={{width:'700px'}}  value={name} onKeyDown={nextInput} onChange={e => setName(e.target.value)} placeholder="Coloque aqui o que te aborrece ...." />   
  
   {appearButton && <DivButton>
     <ButtonNext onClick={next}>

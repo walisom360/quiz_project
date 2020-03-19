@@ -16,7 +16,7 @@ export default function TasksNormal({history}){
 
 
   function next(){
-    history.push('/tasks')
+    history.push('/descriptionone')
   }
  
 
@@ -26,14 +26,14 @@ export default function TasksNormal({history}){
 <Background banner={img}  />
 
 <div style={{padding:80}}>
-      <h1>Marque o brinquedo que vc brincava quando era kid !!!</h1>
+      <h1>Que tipo de coisas te agradam ?</h1>
 
  <DivOptions>
-   {['A','B','C','D'].map(t =>(
+   {[{title:'A',question:"Qualquer coisa"},{title:'B',question:"Essa eu não sei"},{title:'C',question:"Tudo me agrada"},{title:'D',question:"Nada me Agrada"}].map(t =>(
      <Card onClick={next}>
-        <Option>{t}</Option>
+        <Option>{t.title}</Option>
        
-       <h3>Digite aqui o que vc quiser pode ser qualquer coisa</h3>
+     <h3>{t.question}</h3>
   
      </Card>
    ))}
