@@ -85,7 +85,7 @@ export const Background = styled.div`
   background: url(${props => (props.banner)}) no-repeat;
   background-size: 100% 100%;
 
-  filter: brightness(60%);
+  filter: brightness(40%);
  
   width: 100%;
   height:100%;
