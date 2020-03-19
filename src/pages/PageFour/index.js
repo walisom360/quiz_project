@@ -8,7 +8,7 @@ import img from '../../assets/Tela-Inicial-4.png';
 export default function FirstPage({history}) {
 
  function next(){
-   history.push('/tasks')
+   history.push('/youdescription')
  }
 
 
