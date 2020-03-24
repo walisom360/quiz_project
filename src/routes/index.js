@@ -22,6 +22,9 @@ import Unusual from '../pages/Unusual'
 import Finish from '../pages/Finish'
 
 
+import Result  from '../pages/Result'
+
+
 export default function Routes(){
 
   return(
@@ -45,7 +48,7 @@ export default function Routes(){
        <Route path="/dream" component={Dream}/>
        <Route path="/unusual" component={Unusual}/>
 
-       <Route path="/fim" component={Finish}/>
+       <Route path="/fim" component={Result}/>
       
      </Switch>
     </BrowserRouter>
